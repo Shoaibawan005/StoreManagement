@@ -13,7 +13,7 @@ namespace Store.Application.Services
     public class UserSRV : IUserSRV
     {
 
-        private readonly IUserRepo _userRepo;
+        private readonly IUserRepo _userRepo; 
         public UserSRV(IUserRepo userRepo)
         {
             _userRepo = userRepo;
