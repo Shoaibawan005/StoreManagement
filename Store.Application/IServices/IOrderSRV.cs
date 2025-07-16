@@ -13,7 +13,7 @@ namespace Store.Application.IServices
 
         public List<Order> GetAllOrders();
 
-        public Order? AddOrder(OrderModel orderModel);
+        public Order? AddOrder(OrderModel orderModel); 
 
         public string DeleteOrder(int id);
     }
