@@ -26,7 +26,7 @@ namespace Store.API.Controllers
             return Ok(users);
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult GetUserDetail(int id) {
             var user = _iUserSRV.GetUserDetail(id);
 
