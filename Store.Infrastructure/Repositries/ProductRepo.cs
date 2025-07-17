@@ -14,7 +14,7 @@ namespace Store.Infrastructure.Repositries
         private readonly AppDbContext _context;
 
         public ProductRepo(AppDbContext context)
-        {
+        { 
             _context = context;
         }
 
