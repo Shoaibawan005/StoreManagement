@@ -28,7 +28,7 @@ namespace Store.Application.Services
 
         public Product AddProduct(ProductModel productModel)
         {
-            if (string.IsNullOrEmpty(productModel.Name) || string.IsNullOrEmpty(productModel.Description) || decimal.IsNegative(productModel.Price))
+            if (string.IsNullOrEmpty(productModel.Name) || string.IsNullOrEmpty(productModel.Description) || int.IsNegative(productModel.Price))
             {
                 throw new ArgumentException();
             }
