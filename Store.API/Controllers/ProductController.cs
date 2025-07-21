@@ -39,7 +39,8 @@ namespace Store.API.Controllers
         {
             var result = _iProductSRV.DeleteProduct(id);
 
-            return Ok(result);
+            //return Ok(result);
+            return Ok(new { message = result });
         }
     }
 }
