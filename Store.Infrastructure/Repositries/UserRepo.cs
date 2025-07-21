@@ -26,7 +26,7 @@ namespace Store.Infrastructure.Repositries
         public UserModel? GetUserDetail(int id)
         {
             var user = _context.Users.FirstOrDefault( x => x.Id == id );
-            if (user == null) {
+            if (user == null) { 
                 return null;
             }
 
