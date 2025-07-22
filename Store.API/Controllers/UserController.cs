@@ -45,7 +45,7 @@ namespace Store.API.Controllers
         public IActionResult DeleteUser(int id)
         {
             var msg = _iUserSRV.DeleteUser(id);
-            return Ok(msg);
+            return Ok(new {message = msg});
         }
 
     }
