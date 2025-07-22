@@ -64,7 +64,7 @@ namespace Store.Infrastructure.Repositries
             }
 
             _context.Users.Remove(user);
-
+            _context.SaveChanges();
             return "User Deleted Successfully.";
         }
     }
